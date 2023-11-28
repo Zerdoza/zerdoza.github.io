@@ -1,0 +1,86 @@
+/* 
+    Styles for Project Listing Site.
+
+    Font: Scope One - Google Font
+    
+    Background gradient colour: #8FA7B4
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Scope One', serif; 
+    background-image: linear-gradient(#8FA7B4, white);
+    background-repeat: no-repeat;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.background-img{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-img::before{
+    content:"";
+    background-image: url("./imgs/bk1.png");
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+}
+.project-title{
+    font-size: 1.2em;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.project-title h3{
+    font-size: 0.7em;
+
+}
+.project-tile{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    max-width: 990px;
+    justify-items: start;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.40));
+}
+.project-tile:hover{
+    background-color: #e2e5e6;
+}
+.project-tile h2{
+    padding-top: 20px;
+}
+.project-tile-image{
+    grid-row: span 3;
+    place-self: center;
+}
+.project-tile img{ 
+    display: block;
+    max-height: 114px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.25));
+}
+.date{
+    position: relative;
+    bottom: 110px;
+    left: 690px;
+}
