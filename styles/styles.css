@@ -96,7 +96,5 @@ main{
     transform: scale(1.1);
 }
 .date{
-    position: relative;
-    bottom: 110px;
-    left: 690px;
+    place-self: end;
 }
