@@ -83,16 +83,13 @@ main{
     grid-row: span 3;
     place-self: center;
 }
-.project-tile-image:hover{
-   
-}
 .project-tile img{ 
     display: block;
     max-height: 114px;
     border-radius: 20px;
     filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.25));
 }
-.project-tile img:hover{ 
+.project-tile img:hover{
     transform: scale(1.1);
 }
 .date{
