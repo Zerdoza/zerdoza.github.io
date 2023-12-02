@@ -1,0 +1,157 @@
+/* frontend mentor's results summary component
+    Developer: Zerdoza
+    Date: 20/11/2023
+*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Mina:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 40px;
+    margin: auto;
+    max-width: 375px;
+    min-height: 463px;
+}
+.result h2 {
+    color: hsl(0, 0%, 100%);
+}
+.result-comment {
+    max-width: 300px;
+    padding: 0px 40px;
+}
+.result-comment p {
+    padding-top: 8px;
+    color: hsla(221, 100%, 96%, 65%);
+}
+.score-of-100{
+    position: relative;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 35px auto;
+}
+.score-of-100 h2{
+    color: white;
+    font-size: 50px;
+    padding-top: 35px;
+}
+.score-of-100 p {
+    color: hsla(221, 100%, 96%, 40%);
+}
+.result-summary{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    max-width: 320px;
+    min-height: 425px;
+    text-align: left;
+    gap: 10px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+/* 
+colours for summary
+Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+*/
+.result-summary h2 {
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+}
+.result-summary ul{
+    display: flex;
+    flex-direction: column;
+}
+.result-summary ul li {
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px;
+}
+.result-summary ul li:nth-child(1){
+    background-color: hsla(0, 100%, 67%, 10%);
+    color: hsl(0, 100%, 67%);
+}
+.result-summary ul li:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 10%);
+    color: hsl(39, 100%, 56%);
+}
+.result-summary ul li:nth-child(3){
+    background-color: hsla(166, 100%, 37%, 10%);
+    color: hsl(166, 100%, 37%);
+}
+.result-summary ul li:nth-child(4){
+    background-color: hsla(234, 85%, 45%, 10%);
+    color: hsl(234, 85%, 45%);
+}
+.result-summary button{
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+}
+.result-categorys li{
+    display: flex;
+    list-style: none;
+}
+.result-categorys li p:nth-child(3){
+    color: hsla(224, 30%, 27%, 90%);
+    margin-left: auto;
+}
+.result-categorys li p:last-of-type{
+    color: hsla(224, 30%, 27%, 30%);
+}
+.result-categorys li p{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:1000px) {
+    main{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        max-width: 800px;
+        padding-bottom: 10px;
+        padding-top: 5rem
+    }
+    .result{
+        z-index: 1;
+    }
+    .result-summary{
+        padding-left:30px;
+        background-color: hsl(0, 0%, 100%);
+        filter: drop-shadow(15px 5px 5px hsla(241, 100%, 89%, 40%))
+    }
+    .result-summary ul li {
+        padding: 18px;
+        margin: 10px;
+    }
+}
