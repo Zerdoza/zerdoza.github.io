@@ -84,7 +84,9 @@ main{
     place-self: center;
 }
 .project-tile img{ 
-    display: block;
+    margin: auto;
+    width: 100%;
+    max-width:155px;
     max-height: 114px;
     border-radius: 20px;
     filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.25));
